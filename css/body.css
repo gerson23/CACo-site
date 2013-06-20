@@ -38,16 +38,56 @@ body {
   color: #ffffff;
   font-family: verdana;
   text-align: center;
-  width: 140px;
+  position: relative;
+}
+
+.nav ul li:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.nav li ul{
+  position: absolute;
+  display: none;
+}
+
+.nav li:hover ul {
+  display: block;
+  height: auto;
+  padding-top: 10px;
+  left: -33px;
+}
+
+/*submenu <a> tag*/
+.nav ul li ul a {
+  float: left;
+  padding: 5px 20px;
+  width: 160px;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.nav ul li li {
+  float: none;
 }
 
 .nav a:link, a:visited {
   color: #ffffff;
   text-decoration: none;
+  background-color: #000000;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .nav a:hover {
   color: #084d0e;
+}
+
+.nav a:active {
+  color: #2b2b2b;
 }
 
 a.btn-login {
@@ -60,10 +100,6 @@ a.btn-login {
   border-style: solid;
   border-color: #000000;
   border-radius: 8px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 a.btn-login:hover {
