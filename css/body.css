@@ -8,15 +8,27 @@ body {
   display: block;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 2px;
+  right: -2px;
   background-color: #000000;
   border-bottom-style: dashed;
   border-color: #808a87;
   border-width: 1px;
 }
 
+.logo {
+  float: left;
+  height: 44px;
+  width: auto;
+  background-color: #ffffff;
+  left: 2px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 8px;
+}
+
 .nav {
-  float: right;
+  float: left;
   margin-right: 10px;
 }
 
@@ -24,4 +36,45 @@ body {
   list-style: none;
   float: left;
   color: #ffffff;
+  font-family: verdana;
+  text-align: center;
+  width: 140px;
+}
+
+.nav a:link, a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #084d0e;
+}
+
+a.btn-login {
+  background-color: #084d0e;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+a.btn-login:hover {
+  background-color: #052d09;
+  color: #ffffff;
+}
+
+input[type=search] {
+  font-size: 16px;
+}
+
+input[type=search]::-webkit-input-placeholder {
+  color: #084d0e;
 }
